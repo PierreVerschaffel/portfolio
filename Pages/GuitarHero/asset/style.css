@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    max-height: 100vh;
+    background-color: black;
+}
+
+h1{
+    color: #efefef;
+}
+
+.container{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    height: 50%;
+    background-color: #855E42;
+}
+
+.selector{
+    position: absolute;
+    height: 100%;
+    left: 15%;
+    width: 1%;
+    background-color: grey;
+}
+
+hr:nth-of-type(1){
+    position: absolute;
+    top: 20%;
+    color: green;
+    width: 100%;
+}
+
+hr:nth-of-type(2){
+    position: absolute;
+    top: 40%;
+    color: green;
+    width: 100%;
+}
+
+hr:nth-of-type(3){
+    position: absolute;
+    top: 60%;
+    color: green;
+    width: 100%;
+}
+
+hr:nth-of-type(4){
+    position: absolute;
+    top: 80%;
+    color: green;
+    width: 100%;
+}
+
+#gameOverSection {
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameOver{
+    font-size: 5rem;
+}
+
+#replayBtn{
+    width: 10%;
+    background-color: grey;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+}
+
+#replayBtn:hover{
+    background-color: lightgray;
+}
+
+/* #background{
+    background: url(./svg-and-css-squiggly-pattern.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+    backdrop-filter: blur(0px);
+  } */

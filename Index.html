@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./asset/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pierre Verschaffel</h1>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav">À propos</a></li>
+                <li><a href="#experience" class="nav">Expérience</a></li>
+                <li><a href="#skills" class="nav">Compétences</a></li>
+                <li><a href="#projects" class="nav">Projets</a></li>
+                <li class="dropdown">
+                    <div class="dropbtn">
+                        <span id="navSocialDisplay">Réseaux</span>
+                        <img src="./asset/dropdown-svgrepo-com.svg" alt="" class="icon">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="https://www.linkedin.com/in/pierre-verschaffel/" target="_blank"><img src="./asset/iconmonstr-linkedin-3.svg" alt="Icone Linkedin" class="icon navIcon">Linkedin</a>
+                        <a href="https://www.github.com/PierreVerschaffel" target="_blank"><img src="./asset/iconmonstr-github-1.svg" alt="Icone Github" class="icon navIcon">Github</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <div id="background"></div>
+        <section id="about">
+            <h2>À propos de moi</h2>
+            <ul id="aboutList">
+                <li class="text">06 18 35 07 81</li>
+                <li class="text">pierre23021999@gmail.com</li>
+                <li class="text">3 rue du Chanoine Hennequin, Hettange-Grande</li>
+                <li class="text"><img src="./asset/iconmonstr-car-4.svg" alt="Icone de voiture" class="icon">Permis B</li>
+            </ul>
+        </section>
+        
+        <section id="experience">
+            <h2>Expérience professionnelle</h2>
+            <p class="title">Metz Numeric School - Metz - Centre Formation</p>
+            <p class="underText">09/2022 - En cours</p>
+            <p class="text">En reconversion professionnelle vers le développement web, je suis
+                actuellement en formation pour acquérir les compétences
+                nécessaires pour devenir un développeur web accompli. Passionné
+                par les technologies et leur potentiel de création, j'ai décidé de me
+                lancer dans cette nouvelle aventure pour donner un nouvel élan à
+                ma carrière. Mon objectif est d'apprendre les différentes langages
+                de programmation, les outils et les bonnes pratiques pour être en
+                mesure de créer des applications web performantes et innovantes.
+                Je suis déterminé à réussir dans cette nouvelle voie professionnelle
+                et à contribuer au développement de projets à forte valeur ajoutée.
+            </p>
+        </section>
+        
+        <section id="skills">
+            <h2>Compétences</h2>
+            <div>
+                <ul>
+                    <li><img src="./asset/document-html-svgrepo-com.svg" alt="" class="icon">HTML/CSS</li>
+                    <li><img src="./asset/language-javascript-svgrepo-com.svg" alt="" class="icon">JavaScript</li>
+                    <li><img src="./asset/file-php-1769-svgrepo-com.svg" alt="" class="icon">MySQL/PHP</li>
+                </ul>
+                <ul>
+                    <li><img src="./asset/react-svgrepo-com.svg" alt="" class="icon">REACT</li>
+                    <li><img src="./asset/angular-svgrepo-com.svg" alt="" class="icon">Angular</li>
+                    <li><img src="./asset/symfony-svgrepo-com.svg" alt="" class="icon">Symfony</li>
+                </ul>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Réalisations</h2>
+            <h3>Jeux : </h3>
+            <ul>
+                <li>
+                    <p class="projectTitle">Money Maker</p>
+                    <p class="underText">(version mobile indisponible)</p>
+                    <a href="./Pages/MoneyMaker/index.html"><img src="./asset/moneyMakerSample.PNG" alt="Images du jeu money maker" class="projectImages"></a>
+                </li>
+            </ul>
+            <h3>Applications : </h3>
+            <ul>
+                <li>
+                    <p class="projectTitle">I-Admin</p>
+                    <p class="underText">(gestion d'état de présence)</p>
+                    <img src="./asset/i-adminSample.png" alt="Images du projet I-admin" class="projectImages">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Pierre Verschaffel. Tous droits réservés.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
