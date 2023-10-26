@@ -77,11 +77,16 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 20px;
+  text-align: center;
+}
+nav ul li:hover {
+  background-color: #715886;
 }
 
 nav ul li a {
   color: #efefef;
+  padding-right:10px;
+  padding-left: 10px;
   text-decoration: none;
 }
 ul li a{
@@ -90,7 +95,7 @@ ul li a{
 
 section {
   z-index: 1;
-  padding: 40px;
+  padding: 30px;
   width: 100%;
   max-width: 800px;
   margin-bottom: 40px;
@@ -103,9 +108,11 @@ section {
   box-shadow: 1px 2px 7px rgb(43 43 43 / 23%);
   color: #efefef;
 }
+
 .dropdown {
   position: relative;
   display: inline-block;
+  padding-left: 10px;
 }
 
 .dropbtn{
@@ -148,14 +155,15 @@ footer {
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 80px;
+  height: 100px;
+  max-height: 100px;
 }
 
 #aboutList{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   max-height: 800px;
 }
 
@@ -216,4 +224,90 @@ footer {
     padding-bottom: 0;
   }
 
+}
+
+.star {
+  color: #827191;
+}
+
+.star:hover {
+  color: #efefef;
+  cursor: pointer;
+}
+
+.falling-star {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #212121;
+  padding: 10px;
+  border-radius: 5px;
+  border: 5px solid #555555;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+
+  /* transition: opacity 0.3s, visibility 0.3s; */
+}
+
+.successTitle {
+  color: #ffff00;
+}
+.successText {
+  color: #efefef;
+}
+
+.popup p{
+  line-height: 10px;
+}
+
+.popup div{
+  text-align: center;
+  padding-left: 20px;
+}
+
+.popup img{
+  padding-bottom: 10px;
+}
+.popup.show {
+  width: 250px;
+}
+
+#successLogo {
+  width: 30px;
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
 }
